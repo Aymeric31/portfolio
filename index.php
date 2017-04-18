@@ -160,7 +160,7 @@
         <!-- /.content-section-a -->
 
         <a  name="contact"></a>
-        <!-- <div class="banner">
+<!--         <div class="banner">
 
             <div class="container">
 
@@ -184,8 +184,6 @@
                 </div>
 
             </div>
-            <!-- /.container -->
-
         </div> -->
         <!-- /.banner -->
 
