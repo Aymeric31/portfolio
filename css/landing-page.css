@@ -24,9 +24,23 @@ h6 {
     border-radius: 50%;
     display: block;
     max-width: 100%;
-    width: 400px;
+    width: 350px;
     height: auto;
     box-shadow: 7px 5px 15px;
+}
+.arrondi{
+    border-radius: 5%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 390px;
+}
+.intro-travaux {
+    padding-top: 25px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 25px;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
 }
 .topnav {
     font-size: 14px; 
@@ -174,7 +188,6 @@ h6 {
     width: 100%;
     text-align: left;
     font: bold 16px sans-serif;
-
     padding: 55px 50px;
 }
 
@@ -238,9 +251,12 @@ h6 {
 
 
 /* Footer Right */
-
+.saucisse{
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
 .footer-distributed .footer-right{
-    width: 20%;
+    width: 25%;
 }
 
 .footer-distributed .footer-company-about{
@@ -249,14 +265,6 @@ h6 {
     font-size: 13px;
     font-weight: normal;
     margin: 0;
-}
-
-.footer-distributed .footer-company-about span{
-    display: block;
-    color:  #ffffff;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 20px;
 }
 
 .footer-distributed .footer-icons{
