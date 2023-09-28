@@ -1,30 +1,20 @@
-/*
- * Start Bootstrap - Landing Page (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
  body,
  html {
     width: 100%;
     height: 100%;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body, h1, h2, h3, h4, h5, h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
+
 .arrondi{
     border-radius: 5%;
 }
+
 .intro-travaux {
-    padding-top: 25px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 25px; /* If making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 25px;
     text-align: center;
     border-top: 1px solid #e7e7e7;
@@ -36,7 +26,7 @@ h6 {
 }
 
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 50px; /* If making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
@@ -120,22 +110,41 @@ h6 {
     margin-bottom: 30px;
 }
 
+hr {
+    border: 3px solid;
+    border-color: grey;
+}
+
 .section-heading-spacer {
     float: left;
     width: 200px;
     border-top: 3px solid #e7e7e7;
 }
 
-.banner {
-    padding: 100px 0;
-    color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
-    background-size: cover;
+.reduced-image {
+    width: 80%;
+    height: auto;
 }
 
-.banner-social-buttons {
-    float: right;
-    margin-top: 0;
+.reduced-image-plus {
+    width: 60%;
+    height: auto;
+}
+
+.arrow {
+    margin-top: 20px;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+@media(min-width:1335px) {
+    iframe {
+        margin-left: 100px;
+    }
 }
 
 @media(max-width:1199px) {
@@ -145,11 +154,14 @@ h6 {
     }
 }
 
-@media(max-width:767px) {
+@media(max-width:991px) {
     .banner h2 {
         margin: 0;
         text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
         font-size: 3em;
+    }
+    iframe {
+        width: 400px;
     }
 
     ul.banner-social-buttons > li {
@@ -163,137 +175,33 @@ h6 {
     }
 }
 
-.footer-distributed{
-    background-color: #292c2f;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    width: 100%;
-    text-align: left;
-    font: bold 16px sans-serif;
-    padding:15px 10px;
-}
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-    display: inline-block;
-    vertical-align: top;
-}
-
-/* Footer left */
-
-.footer-distributed .footer-left{
-    width: 40%;
-    text-align: center;
-
-}
-
-/* Footer Center */
-
-.footer-distributed .footer-center{
-    width: 35%;
-}
-.footer-right .footer-left{
-    display: flex;
-    justify-content: center; /* alignement vertical */
-    flex-direction: column; /* direction d'affichage verticale */
-
-}
-.footer-distributed .footer-center i{
-    background-color:  #33383b;
-    color: #ffffff;
-    font-size: 25px;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 42px;
-    margin: 10px 15px;
-    vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope{
-    font-size: 17px;
-    line-height: 38px;
-}
-
-.footer-distributed .footer-center p{
-    display: inline-block;
-    color: #ffffff;
-    vertical-align: middle;
-    margin:0;
-}
-
-.footer-distributed .footer-center p span{
-    display:block;
-    font-weight: normal;
-    font-size:14px;
-    line-height:2;
-}
-
-.footer-distributed .footer-center p a{
-    color:  #5383d3;
-    text-decoration: none;;
-}
-
-
-/* Footer Right */
-.decale{
-    text-align: center;
-    margin: 0px 0px 20px 0px;
-}
-.footer-distributed .footer-right{
-    width: 25%;
-}
-
-.footer-distributed .footer-company-about{
-    line-height: 20px;
-    color:  #92999f;
-    font-size: 13px;
-    font-weight: normal;
-    margin: 0;
-}
-
-.footer-distributed .footer-icons{
-    margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a{
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    background-color:  #33383b;
-    border-radius: 2px;
-
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 35px;
-
-    margin-right: 3px;
-    margin-bottom: 5px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
-    .footer-distributed{
-        font: bold 14px sans-serif;
+@media(max-width:767px) {
+    iframe {
+        width: 300px;
     }
-
-    .footer-distributed .footer-left,
-    .footer-distributed .footer-center,
-    .footer-distributed .footer-right{
-        display: block;
-        width: 100%;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-
-    .footer-distributed .footer-center i{
-        margin-left: 0;
-    }
-
 }
+
+@media(max-width:580px) {
+    iframe {
+        width: 500px;
+    }
+}
+
+@media(max-width:513px) {
+    iframe {
+        width: auto;
+    }
+}
+
+.custom-social-btn {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-social-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
